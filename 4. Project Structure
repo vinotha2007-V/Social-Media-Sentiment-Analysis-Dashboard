@@ -1,0 +1,23 @@
+social-media-sentiment-dashboard/
+│
+├── data/
+│   └── tweets.csv
+│
+├── notebooks/
+│   └── EDA.ipynb
+│
+├── src/
+│   ├── data_collection.py
+│   ├── preprocessing.py
+│   ├── sentiment_model.py
+│   ├── visualization.py
+│
+├── app/
+│   └── dashboard.py
+│
+├── models/
+│   └── sentiment_model.pkl
+│
+├── requirements.txt
+├── README.md
+└── main.py
