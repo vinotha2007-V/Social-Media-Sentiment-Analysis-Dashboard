@@ -1,0 +1,5 @@
+This project analyzes social media data (Twitter/X, Reddit, etc.) and classifies user sentiment into:
+Positive 😊
+Negative 😡
+Neutral 😐
+It also provides an interactive dashboard for visualization.
