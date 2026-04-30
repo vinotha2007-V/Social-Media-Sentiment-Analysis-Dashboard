@@ -1,0 +1,22 @@
+Use BERT for better accuracy
+Deploy using AWS / Render
+Add multilingual support
+---
+
+## 💡 8. Advanced Improvements (for Resume 🔥)
+- Use **BERT (Transformers)** instead of VADER  
+- Deploy on **Streamlit Cloud / AWS**  
+- Add **real-time streaming dashboard**  
+- Use **Power BI integration**  
+- Add **topic modeling (LDA)**  
+
+---
+
+## 🎯 9. How to Upload to GitHub
+```bash
+git init
+git add .
+git commit -m "Initial commit - Sentiment Dashboard"
+git branch -M main
+git remote add origin <your-repo-link>
+git push -u origin main
