@@ -1,0 +1,23 @@
+import streamlit as st
+import pandas as pd
+import plotly.express as px
+
+st.title("📊 Social Media Sentiment Dashboard")
+
+df = pd.read_csv("../data/output.csv")
+
+st.subheader("Data Preview")
+st.write(df.head())
+
+sentiment_count = df['sentiment'].value_counts().reset_index()
+sentiment_count.columns = ['Sentiment', 'Count']
+
+fig = px.bar(sentiment_count, x='Sentiment', y='Count', color='Sentiment')
+st.plotly_chart(fig)
+
+st.subheader("Search Tweets")
+keyword = st.text_input("Enter keyword")
+
+if keyword:
+    filtered = df[df['text'].str.contains(keyword, case=False)]
+    st.write(filtered)
