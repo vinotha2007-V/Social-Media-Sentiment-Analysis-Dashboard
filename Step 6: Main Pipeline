@@ -1,0 +1,12 @@
+import pandas as pd
+from src.preprocessing import clean_text
+from src.sentiment_model import get_sentiment
+
+df = pd.read_csv("data/tweets.csv")
+
+df['clean_text'] = df['text'].apply(clean_text)
+df['sentiment'] = df['clean_text'].apply(get_sentiment)
+
+df.to_csv("data/output.csv", index=False)
+
+print(df.head())
